@@ -52,3 +52,79 @@ echo "<br/>A cidade onde moro é " . CIDADE; // . -> é a forma de concatenar te
 - Para variáveis, dê preferências a letras maiúsculas
 - Use camelCase para métodos e atributos
 - Use SNAKE_CASE para nomear constantes
+
+## TIPOS PRIMITIVOS
+
+### ESCALARES
+
+- int/integer
+- string
+- float/double/real
+- boolean
+
+### COMPOSTOS
+
+- object
+- array
+
+### ESPECIAIS
+
+- null
+- resource
+- callabe
+- mixed
+
+## Manipulação de Strings
+
+### Double quoted
+
+```
+
+    $nome = "Thasyo";
+    echo "Olá, $nome";
+    
+    O double quoted interpreta o que está dentro da string.
+
+```
+
+### Single quoted
+
+```
+
+    $nome = "Thasyo";
+    echo '<br/>Olá, $nome';
+    
+    O single quoted só transmite o conteúdo dentro das aspas.
+
+```
+
+### Concatenação
+
+```
+
+    const ESTADO = "PB";
+    echo "Moro na ESTADO";
+    echo '<br/>Moro na ESTADO';
+    echo "<br/>Moro na ". ESTADO;
+
+    O '.' concatena informações.
+
+```
+
+### Sequência de Escapes
+
+- \n: Nova Linha;
+- \t: Tabulação horizontal;
+- \\: Barra invertida;
+- \$: Sinal de cifrão;
+- \u{}: Codepoint Unicode;
+
+```
+
+    $nome = "Thasyo";
+    $sobrenome = "Peres";
+    $apelido = "Feijão";
+
+    echo "$nome \"$apelido\" $sobrenome";
+
+```
